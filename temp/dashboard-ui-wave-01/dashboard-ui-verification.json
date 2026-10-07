@@ -1,0 +1,168 @@
+{
+  "baseUrl": "http://127.0.0.1:3281",
+  "generatedAt": "2026-10-07T19:07:42.893Z",
+  "personas": [
+    {
+      "persona": "admin",
+      "expectedRole": "SUPER_ADMIN",
+      "actualRoles": [
+        "SUPER_ADMIN"
+      ],
+      "login": "PASS",
+      "authMe": "PASS",
+      "intendedRoute": "PASS",
+      "desktop": {
+        "title": "وضعیت عملیاتی سامانه",
+        "direction": "rtl",
+        "viewportWidth": 1440,
+        "documentWidth": 1440,
+        "horizontalOverflow": false,
+        "sidebarVisible": true
+      },
+      "mobile": {
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "horizontalOverflow": false,
+        "direction": "rtl",
+        "drawerOpensFromRight": true
+      },
+      "logout": "PASS",
+      "postLogoutAuthMe": "401 PASS"
+    },
+    {
+      "persona": "doctor",
+      "expectedRole": "USER",
+      "actualRoles": [
+        "USER"
+      ],
+      "login": "PASS",
+      "authMe": "PASS",
+      "intendedRoute": "PASS",
+      "desktop": {
+        "title": "پرونده و وضعیت همکاری",
+        "direction": "rtl",
+        "viewportWidth": 1440,
+        "documentWidth": 1440,
+        "horizontalOverflow": false,
+        "sidebarVisible": true
+      },
+      "mobile": {
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "horizontalOverflow": false,
+        "direction": "rtl",
+        "drawerOpensFromRight": true
+      },
+      "logout": "PASS",
+      "postLogoutAuthMe": "401 PASS"
+    },
+    {
+      "persona": "representative",
+      "expectedRole": "SALES_PARTNER",
+      "actualRoles": [
+        "SALES_PARTNER"
+      ],
+      "login": "PASS",
+      "authMe": "PASS",
+      "intendedRoute": "PASS",
+      "desktop": {
+        "title": "عملکرد و مشتریان منتسب",
+        "direction": "rtl",
+        "viewportWidth": 1440,
+        "documentWidth": 1440,
+        "horizontalOverflow": false,
+        "sidebarVisible": true
+      },
+      "mobile": {
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "horizontalOverflow": false,
+        "direction": "rtl",
+        "drawerOpensFromRight": true,
+        "drawerAccessibility": "PASS"
+      },
+      "logout": "PASS",
+      "postLogoutAuthMe": "401 PASS"
+    },
+    {
+      "persona": "user",
+      "expectedRole": "USER",
+      "actualRoles": [
+        "USER"
+      ],
+      "login": "PASS",
+      "authMe": "PASS",
+      "intendedRoute": "PASS",
+      "desktop": {
+        "title": "سلامت و مزایای شما، یک‌جا",
+        "direction": "rtl",
+        "viewportWidth": 1440,
+        "documentWidth": 1440,
+        "horizontalOverflow": false,
+        "sidebarVisible": true
+      },
+      "mobile": {
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "horizontalOverflow": false,
+        "direction": "rtl",
+        "drawerOpensFromRight": true
+      },
+      "logout": "PASS",
+      "postLogoutAuthMe": "401 PASS"
+    },
+    {
+      "persona": "support",
+      "expectedRole": "SUPPORT",
+      "actualRoles": [
+        "SUPPORT"
+      ],
+      "login": "PASS",
+      "authMe": "PASS",
+      "intendedRoute": "PASS",
+      "desktop": {
+        "title": "پیگیری وضعیت خدمات",
+        "direction": "rtl",
+        "viewportWidth": 1440,
+        "documentWidth": 1440,
+        "horizontalOverflow": false,
+        "sidebarVisible": true
+      },
+      "mobile": {
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "horizontalOverflow": false,
+        "direction": "rtl",
+        "drawerOpensFromRight": true
+      },
+      "logout": "PASS",
+      "postLogoutAuthMe": "401 PASS"
+    }
+  ],
+  "wrongRoleChecks": [
+    {
+      "persona": "representative",
+      "pass": true
+    },
+    {
+      "persona": "user",
+      "pass": true
+    },
+    {
+      "persona": "support",
+      "pass": true
+    }
+  ],
+  "consoleErrors": [],
+  "expectedAuthRejections": [
+    "admin: expected HTTP 401",
+    "doctor: expected HTTP 401",
+    "representative: expected HTTP 403",
+    "representative: expected HTTP 401",
+    "user: expected HTTP 403",
+    "user: expected HTTP 403",
+    "user: expected HTTP 401",
+    "support: expected HTTP 403",
+    "support: expected HTTP 401"
+  ]
+}
